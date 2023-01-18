@@ -1,0 +1,21 @@
+ body{
+     background: aqua;
+     width: 900px;
+     height: 900px;
+
+ }
+
+p{
+    background: antiquewhite;
+    width:600px;
+    height:200px;
+    box-sizing: border-box;
+    padding:50px;
+}
+  ul{
+    background: coral;
+    width:600px;
+    height:300px;
+    box-sizing: border-box;
+      padding: 50px;
+}
