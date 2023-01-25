@@ -7,16 +7,9 @@
     height: 700px;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 100px;
 }
-/*.basement{*/
-/*    background: antiquewhite;*/
-/*    width: 1200px;*/
-/*    height: 440px;*/
-/*    display: flex;*/
-/*    justify-content:center;*/
-/*    padding-top: 100px;*/
-/*    border: dimgray solid;*/
 .block{
     background: lightskyblue;
     width: 900px;
@@ -26,6 +19,7 @@
     align-items: center;
     padding: 100px 20px 20px 20px;
     border: dimgray solid;
+
 }
 .box{
     background: silver;
@@ -35,31 +29,42 @@
     border: dimgray solid;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    font-size: 12px;
-    text-align: justify-all;
-    /*box-sizing: content-box;*/
+    align-items: center;
+    /*font-size: 12px;*/
+    /*text-align: justify-all;*/
+    box-sizing: border-box;
+
+
 }
 .fa-brain{
-    font-size: 40px;
-    align-items:center ;
+    font-size: 30px;
+    position:absolute;
+    top:20px;
+    right: 18px;
 
 }
 .fa-teamspeak{
-    font-size: 40px;
+    font-size: 30px;
+    position:absolute;
+    top:20px;
+    right: 18px;
 }
 .fa-react{
-    font-size: 40px;
+    font-size: 30px;
+    position:absolute;
+    top:20px;
+    right: 18px;
+
 }
 .round{
     background: rosybrown;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
     border: dimgray solid;
     position: relative;
-    top:-270px;
-    right: -50px;
+    top: -170px;
+    right: -70px;
 
 }
 .button{
@@ -68,7 +73,14 @@
     height: 20px;
     border: dimgray solid;
     margin:5px;
-
-
-
+}
+.title{
+    width: 50%;
+    height: 200px;
+    font-size: 12px;
+    display: inline;
+    justify-content: flex-start;
+    text-align:center;
+    box-sizing: border-box;
+    padding-bottom:10px;
 }
