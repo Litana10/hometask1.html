@@ -101,11 +101,111 @@ console.log(mapedCoursesAndDurationArray);
 
 //     описати колоду карт (від 6 до туза без джокерів)
 // - знайти піковий туз
+// let filteredCardsArray = cards.filter(function(mean){
+//     if ( cardSuit= spade){}
+//     return spade;
+//
+// });
+// console.log(filteredCardsArray)
 // - всі шістки
 // - всі червоні карти
 // - всі буби
 // - всі трефи від 9 та більше
-//
+let cards =[
+            { cardSuit:'spade', value: 6, color: 'red'},
+            { cardSuit:'spade', value: 7, color: 'red'},
+            { cardSuit:'spade',value: 8, color: 'red'},
+            { cardSuit:'spade',value: 9, color: 'red'},
+            { cardSuit:'spade',value: 10, color: 'red'},
+            { cardSuit:'spade',value: 'jack',color: 'red'},
+{ cardSuit: 'spade',value: 'queen', color: 'red'},
+{ cardSuit: 'spade',value: 'king', color: 'red'},
+{ cardSuit: 'spade',value: 'ace', color: 'red'},
+{ cardSuit: 'spade',value: 'joker', color: 'red'},
+
+    { cardSuit:'diamond', value: '6', color: 'red'},
+{ cardSuit: 'diamond', value: '7', color: 'red'},
+{ cardSuit: 'diamond',value: '8', color: 'red'},
+{ cardSuit: 'diamond',value: '9', color: 'red'},
+{ cardSuit: 'diamond',value: '10', color: 'red'},
+{ cardSuit: 'diamond',value: 'jack', color: 'red'},
+{ cardSuit: 'diamond',value: 'queen', color: 'red'},
+{ cardSuit: 'diamond',value: 'king', color: 'red'},
+{ cardSuit: 'diamond',value: 'ace', color: 'red'},
+{ cardSuit: 'diamond',value: 'joker', color: 'red'},
+
+    { cardSuit:'heart', value: '6', color: 'red'},
+{ cardSuit: 'heart', value: '7', color: 'red'},
+{ cardSuit: 'heart',value: '8', color: 'red'},
+{ cardSuit: 'heart',value: '9', color: 'red'},
+{ cardSuit: 'heart',value: '10', color: 'red'},
+{ cardSuit: 'heart',value: 'jack', color: 'red'},
+{ cardSuit: 'heart',value: 'queen', color: 'red'},
+{ cardSuit: 'heart',value: 'king', color: 'red'},
+{ cardSuit: 'heart',value: 'ace', color: 'red'},
+{ cardSuit: 'heart',value: 'joker', color: 'red'},
+
+    { cardSuit: 'club',value: '6', color: 'red'},
+{ cardSuit: 'club',value: '7', color: 'red'},
+{ cardSuit: 'club',value: '8', color: 'red'},
+{ cardSuit: 'club',value: '9', color: 'red'},
+{ cardSuit: 'club',value: '10', color: 'red'},
+{ cardSuit: 'club',value: 'jack', color: 'red'},
+{ cardSuit: 'club',value: 'queen', color: 'red'},
+{ cardSuit: 'club',value: 'king', color: 'red'},
+{ cardSuit: 'club',value: 'ace', color: 'red'},
+{ cardSuit: 'club',value: 'joker', color: 'red'},
+
+{ cardSuit:'spade', value: '6', color: 'black'},
+{ cardSuit: 'spade', value: '7', color: 'black'},
+{ cardSuit: 'spade',value: '8', color: 'black'},
+{ cardSuit: 'spade',value: '9', color: 'black'},
+{ cardSuit: 'spade',value: '10', color: 'black'},
+    { cardSuit: 'spade',value: 'jack', color: 'black'},
+{ cardSuit: 'spade',value: 'queen', color: 'black'},
+{ cardSuit: 'spade',value: 'king', color: 'black'},
+{ cardSuit: 'spade',value: 'ace', color: 'black'},
+{ cardSuit: 'spade',value: 'joker', color: 'black'},
+
+
+    { cardSuit:'diamond', value: '6', color: 'black'},
+{ cardSuit: 'diamond', value: '7', color: 'black'},
+{ cardSuit: 'diamond',value: '8', color: 'black'},
+{ cardSuit: 'diamond',value: '9', color: 'black'},
+{ cardSuit: 'diamond',value: '10', color: 'black'},
+{ cardSuit: 'diamond',value: 'jack', color: 'black'},
+{ cardSuit: 'diamond',value: 'queen', color: 'black'},
+{ cardSuit: 'diamond',value: 'king', color: 'black'},
+{ cardSuit: 'diamond',value: 'ace', color: 'black'},
+{ cardSuit: 'diamond',value: 'joker', color: 'black'},
+
+    { cardSuit:'heart', value: '6', color: 'black'},
+{ cardSuit: 'heart', value: '7', color: 'black'},
+{ cardSuit: 'heart',value: '8', color: 'black'},
+{ cardSuit: 'heart',value: '9', color: 'black'},
+{ cardSuit: 'heart',value: '10', color: 'black'},
+{ cardSuit: 'heart',value: 'jack', color: 'black'},
+{ cardSuit: 'heart',value: 'queen', color: 'black'},
+{ cardSuit: 'heart',value: 'king', color: 'black'},
+{ cardSuit: 'heart',value: 'ace', color: 'black'},
+{ cardSuit: 'heart',value: 'joker', color: 'black'},
+
+    { cardSuit: 'club', value: 6, color: 'black'},
+{ cardSuit: 'club', value: 7, color: 'black'},
+{ cardSuit: 'club',value: 8, color: 'black'},
+{ cardSuit: 'club',value: 9, color: 'black'},
+{ cardSuit: 'club',value: 10, color: 'black'},
+{ cardSuit: 'club',value: 'jack', color: 'black'},
+{ cardSuit: 'club',value: 'queen', color: 'black'},
+{ cardSuit: 'club',value: 'king', color: 'black'},
+{ cardSuit: 'club',value: 'ace', color: 'black'},
+{ cardSuit: 'club',value: 'joker', color: 'black'}
+]
+console.log(cards.find((card)=> card.cardSuit==='spade'&& card.value === 'ace'))
+console.log(cards. filter((card)=>card.value=== 6))
+console.log(cards.filter((card)=>card.color==='red'))
+console.log(cards.filter((card)=>card.cardSuit==='diamond'))
+console.log(cards.filter((card)=>card.cardSuit==='club'&& card.value>=9))
 // let arrCards=[];
 // arrCards.push(`cardSuit,value,color`);
 // console.log(`cardSuit,value,color`)
@@ -132,7 +232,142 @@ console.log(mapedCoursesAndDurationArray);
 //     hearts:[],
 //     clubs:[]
 // }
+let cards1 =[
+    { cardSuit: 'club',value: 'queen', color: 'black'},
+    { cardSuit: 'club',value: 'king', color: 'black'},
+    { cardSuit:'spade',value: 'jack',color: 'red'},
+    { cardSuit: 'spade',value: 'queen', color: 'red'},
+    { cardSuit: 'spade',value: 'king', color: 'red'},
+    { cardSuit: 'spade',value: 'ace', color: 'red'},
+    { cardSuit: 'spade',value: 'joker', color: 'red'},
+    { cardSuit: 'diamond',value: 'ace', color: 'black'},
+    { cardSuit: 'diamond',value: 'joker', color: 'black'},
+    { cardSuit: 'heart',value: 'queen', color: 'red'},
+    { cardSuit: 'heart',value: 'king', color: 'red'}];
+// console.log(cards1.reduce((accumulator,value)=>{
+//     if (cardSuit = 'club') {
+//         accumulator.club.push(value);
+//         if (cardSuit = 'spade') {
+//             accumulator.spade.push(value);
+//             if (cardSuit = 'heart') {
+//                 accumulator.heart.push(value)}
+//                 if (cardSuit = 'diamond') {
+//                     accumulator.diamond.push(value);
+//                 }
+//                 return accumulator}
+//
+//                 { club: [];spade:[];diamond:[];heart:[]}
+//
+//
+//         // let cardSuit=reduce.club
+//         console.log(cardSuit);}}))
+
+    const obj = cards.reduce((accumulator, value)=>{
+    accumulator[value.cardSuit].push(value);
+    return accumulator
+    },{ club:[], spade:[], diamond:[], heart:[] })
+
+console.log(obj)
+
 // =========================
 //     взяти з arrays.js (який лежить в папці 2023 plan) масив coursesArray
 // --написати пошук всіх об'єктів, в який в modules є sass
 // --написати пошук всіх об'єктів, в який в modules є docker
+let courses = [
+    {
+        title: 'JavaScript Complex',
+        monthDuration: 5,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js'],
+        logo: '',
+        price: 0,
+        rating: 5,
+        avgResult: 99
+    },
+    {
+        title: 'Java Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'react',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'java core',
+            'java advanced'],
+        logo: '',
+        price: 0,
+        rating: 4.998,
+        avgResult: 97
+    },
+    {
+        title: 'Python Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'react',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'python core',
+            'python advanced'],
+        logo: '',
+        price: 0,
+        rating: 4.812,
+        avgResult: 98
+    },
+    {
+        title: 'QA Complex',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'QA/QC'],
+        logo: '',
+        price: 0,
+        rating: 4.65,
+        avgResult: 97
+    },
+    {
+        title: 'FullStack',
+        monthDuration: 7,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'react',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'node.js',
+            'python',
+            'java'],
+        logo: '',
+        price: 0,
+        rating: 4.772,
+        avgResult: 100
+    },
+    {
+        title: 'Frontend',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass'],
+        logo: '',
+        price: 0,
+        rating: 4.53,
+        avgResult: 90
+    }
+];
+console.log(courses. filter((item)=>item.modules.includes('sass')));
+console.log(courses.filter((item)=>item.modules.includes('docker')));
