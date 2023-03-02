@@ -214,18 +214,23 @@ class Cinderella extends Girls{
         this.size=size;
     }
 }
-class Prince extends Girls{
-    constructor(name,age,boot) {
-        super(name,age);
-        this.boot=boot;
+class Prince extends Girls {
+    constructor(name, age, boot) {
+        super(name, age);
+        this.boot = boot;
     }
-    findPrincess(arr){
-        for (const variant of arr){
-            if(variant.size===this.boot){
+
+    findPrincess(arr) {
+        for (const variant of arr) {
+            if (variant.size === this.boot) {
                 return variant
             }
         }
     }
+    //
+    // findPrincess1(arr) {
+    //     return arr.find((variant) => variant.size === this.boot);
+    // }
 }
 const CinderellaArr=[
     new Cinderella(`di `, 29,41),
